@@ -5,7 +5,6 @@ export default async function Home() {
   const latestProducts = await getLatestProducts();
   return (
     <div className="space-y-8">
-
       <ProductList title="Newest Arrivals" data={latestProducts} />
     </div>
   );
